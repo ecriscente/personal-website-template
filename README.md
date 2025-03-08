@@ -22,7 +22,7 @@ This template uses the JSON Resume standard for easy resume management and inclu
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/personal-website-template.git
+git clone https://github.com/ecriscente/personal-website-template.git
 cd personal-website-template
 ```
 
@@ -111,9 +111,8 @@ NEXT_PUBLIC_CALENDAR_URL="your_google_calendar_embed_url"
 ```
 
 Note: Appointment scheduling requires either:
-- Google Workspace Individual subscription ($7.99/month)
-- Google Workspace Business Standard or higher
-- Google One Premium Plan (2TB or higher)
+- Google Workspace Business Basic or higher
+- Google One subscription
 
 ### Stripe Buy Button Integration
 
