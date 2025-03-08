@@ -1,0 +1,115 @@
+@import '../styles/utils.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f8fa;
+  --foreground: #1e3a5f;
+  --primary: #2c5282;
+  --secondary: #3182ce;
+  --accent: #4299e1;
+  --highlight: #f59e0b;
+  --muted: #718096;
+  --transition-slow: 0.5s;
+  --transition-fast: 0.3s;
+}
+
+@layer base {
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    @apply font-sans;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+  
+  ::selection {
+    @apply bg-purple-200 text-purple-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 
+    text-white font-medium py-2 px-4 rounded-md transition-all duration-300 transform hover:scale-105 
+    hover:shadow-lg;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 0.6s ease-out forwards;
+  }
+  
+  .coffee-btn {
+    @apply relative overflow-hidden transform transition-all duration-300 hover:scale-105 
+    bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold py-3 px-6 rounded-lg
+    shadow-lg hover:shadow-xl;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Post-modern decorative elements */
+.pattern-dots {
+  background-image: radial-gradient(var(--primary) 2px, transparent 2px);
+  background-size: 30px 30px;
+  @apply opacity-5;
+}
+
+.pattern-grid {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  @apply opacity-20;
+}

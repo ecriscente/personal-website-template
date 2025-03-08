@@ -1,0 +1,229 @@
+.container {
+  @apply w-full mx-auto p-4 pt-20 max-w-7xl;
+}
+
+.hero {
+  @apply relative overflow-hidden rounded-2xl my-8;
+  background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+}
+
+.heroContent {
+  @apply w-full mx-auto px-4 py-20 text-center;
+}
+
+.heroPattern {
+  @apply absolute inset-0 opacity-10 mix-blend-overlay;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.heading1 {
+  @apply text-5xl md:text-6xl font-bold mb-6 text-white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.heroText {
+  @apply text-xl md:text-2xl mb-10 text-white/90 max-w-3xl mx-auto;
+}
+
+.buttonContainer {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Fallback button styling */
+.coffeeButtonLink {
+  display: inline-block;
+  text-decoration: none;
+  animation: pulse 2s infinite;
+  position: relative;
+  z-index: 5;
+}
+
+.coffeeButton {
+  background: linear-gradient(to right, #f59e0b, #ea580c);
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 16px -2px rgba(245, 158, 11, 0.25), 0 2px 4px -1px rgba(245, 158, 11, 0.1);
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.coffeeButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.2) 50%, 
+    rgba(255, 255, 255, 0) 100%);
+  animation: shine 3s infinite;
+}
+
+.coffeeButtonLink:hover .coffeeButton {
+  box-shadow: 0 14px 20px -4px rgba(245, 158, 11, 0.35), 0 6px 8px -2px rgba(245, 158, 11, 0.1);
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(to right, #f59e0b, #d97706);
+}
+
+.coffeeButtonLink:active .coffeeButton {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.content {
+  @apply py-16;
+}
+
+.stripeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  min-width: 200px;
+  width: 100%;
+  position: relative;
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contentInner {
+  @apply w-full mx-auto px-4 text-center max-w-3xl;
+}
+
+.heading2 {
+  @apply text-4xl font-bold mb-8 text-center;
+  background: linear-gradient(90deg, #f59e0b, #ea580c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contentText {
+  @apply text-xl mb-8 text-center text-gray-600;
+}
+
+.list {
+  @apply space-y-4 text-left max-w-md mx-auto bg-white rounded-xl p-6 shadow-md;
+}
+
+.listItem {
+  @apply flex items-start space-x-3 text-lg text-gray-700;
+}
+
+.checkIcon {
+  @apply flex-shrink-0 h-6 w-6 text-amber-500 mt-0.5;
+}
+
+.coffeeIcon {
+  @apply h-10 w-10 text-amber-500 mx-auto mb-4;
+}
+
+.animateFadeIn {
+  @apply opacity-0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animateSlideUp {
+  @apply opacity-0;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.animateDelay1 {
+  animation-delay: 0.2s;
+}
+
+.animateDelay2 {
+  animation-delay: 0.4s;
+}
+
+.animateDelay3 {
+  animation-delay: 0.6s;
+}
+
+.coffeeBackground {
+  @apply absolute -z-10 opacity-5;
+  top: 20%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 8h1a4 4 0 0 1 0 8h-1'%3E%3C/path%3E%3Cpath d='M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z'%3E%3C/path%3E%3Cline x1='6' y1='1' x2='6' y2='4'%3E%3C/line%3E%3Cline x1='10' y1='1' x2='10' y2='4'%3E%3C/line%3E%3Cline x1='14' y1='1' x2='14' y2='4'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.floatingButton {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

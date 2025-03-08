@@ -1,0 +1,115 @@
+.navbar {
+  @apply fixed w-full z-50 transition-all duration-300;
+}
+
+.scrolled {
+  @apply bg-white/90 backdrop-blur-md shadow-md py-2;
+}
+
+.transparent {
+  @apply bg-transparent py-4;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.flexBetween {
+  @apply flex justify-between items-center;
+}
+
+.brandLink {
+  @apply text-2xl font-bold bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent hover:opacity-80 transition-opacity;
+}
+
+.desktopNav {
+  @apply hidden md:flex md:items-center md:space-x-6;
+}
+
+.navLink {
+  @apply transition-all duration-300 hover:text-blue-600 text-gray-700 relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.activeLink {
+  @apply text-blue-600 font-medium;
+}
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent);
+}
+
+.coffeeButton {
+  @apply relative overflow-hidden rounded-full px-5 py-2 
+    bg-gradient-to-r from-amber-500 to-orange-500 
+    text-white font-medium transition-all duration-300 
+    hover:shadow-lg hover:scale-105;
+}
+
+.activeCoffeeButton {
+  @apply scale-105 shadow-md;
+}
+
+.buttonContent {
+  @apply relative z-10 flex items-center;
+}
+
+.coffeeIcon {
+  @apply h-5 w-5 mr-1;
+}
+
+.mobileMenuButton {
+  @apply md:hidden p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none;
+}
+
+.mobileMenu {
+  @apply md:hidden;
+}
+
+.mobileMenuHidden {
+  @apply hidden;
+}
+
+.mobileMenuVisible {
+  @apply block;
+}
+
+.mobileNavContainer {
+  @apply px-2 pt-2 pb-3 space-y-1 bg-white/95 backdrop-blur-md shadow-lg rounded-b-lg;
+}
+
+.mobileNavLink {
+  @apply block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300 text-gray-700 hover:bg-gray-50 hover:text-blue-600;
+}
+
+.activeMobileLink {
+  @apply text-blue-600 bg-blue-50;
+}
+
+.mobileCoffeeButton {
+  @apply block px-3 py-2 rounded-md text-base font-medium text-white bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 transition-colors duration-300;
+}
+
+.buttonWithIcon {
+  @apply flex items-center;
+}

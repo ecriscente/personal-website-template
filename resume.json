@@ -1,0 +1,196 @@
+{
+    "basics": {
+        "name": "Erion Criscente",
+        "label": "Full Stack Developer | Production Engineer | Experienced in Django, Next.js, Docker, Serverless and AWS",
+        "email": "me@erion.dev",
+        "phone": "+55 99 99999 9999",
+        "summary": "Results-oriented Full Stack Developer and Production Engineer with a proven track record of success in delivering innovative and impactful solutions. My passion for software development, combined with my solid foundation in agile project management and expertise in technologies like Django, Next.js, Docker, Serverless, and AWS, enables me to effectively tackle complex challenges and drive projects to completion. I thrive in collaborative environments and possess a strong commitment to continuous learning and improvement. Eager to leverage my skills and experience to contribute to a dynamic and forward-thinking organization.",
+        "location": {
+            "countryCode": "BR",
+            "city": "Monte Alto",
+            "region": "São Paulo"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "erioncriscente",
+                "url": "https://www.linkedin.com/in/erioncriscente/"
+            },
+            {
+                "network": "Github",
+                "username": "ecriscente",
+                "url": "https://github.com/ecriscente"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Pearson Education do Brasil LTDA",
+            "position": "Back End Developer",
+            "startDate": "2023-11-06",
+            "highlights": [],
+            "summary": "Maintaining legacy applications and developing new applications and APIs to enhance the student experience for the world's largest English language franchise. Focusing on serverless microservices using AWS components such as Lambda, Dynamo DB, S3, and SQS queues."
+        },
+        {
+            "name": "Lotik",
+            "position": "Full Stack Developer",
+            "startDate": "2022-05-31",
+            "endDate": "2023-10-15",
+            "highlights": [],
+            "summary": "Developed the first Brazilian platform for dynamic innovation management with distributed accounting traceability. Responsible for developing both the front-end and back-end of the platform, which enabled the implementation of proof of concepts.",
+            "url": "https://www.linkedin.com/company/lotiksolutions/"
+        },
+        {
+            "name": "ThirdEarth",
+            "position": "Full Stack Developer",
+            "startDate": "2021-07-31",
+            "endDate": "2023-01-31",
+            "highlights": [],
+            "summary": "Co-founder and contributor to the most disruptive and effective decentralized social network identity hosting service in the ecosystem. The quality of the delivery led to its acquisition by a major company in the same segment.",
+            "url": "https://www.linkedin.com/company/thirdearth/"
+        },
+        {
+            "name": "Tele Solutions",
+            "position": "Digital Marketing Analyst",
+            "startDate": "2020-01-31",
+            "endDate": "2021-06-30",
+            "highlights": [],
+            "summary": "Coordinated digital marketing campaigns to generate leads for the telemarketing team.",
+            "url": "https://www.linkedin.com/company/tele-solutions-sjrp/",
+            "location": "São José do Rio Preto, São Paulo, Brazil"
+        },
+        {
+            "name": "EESC jr.",
+            "position": "Human Resources Manager",
+            "startDate": "2010-03-31",
+            "endDate": "2011-06-30",
+            "highlights": [],
+            "summary": "Responsible for building teams in different areas through competency-based selection; Monitoring and developing members through training to improve individual and collective results; Responsible for feedback meetings (individual and group) to align goals/expectations; Conflict mediator and encourager of new ideas to promote continuous improvement of projects.",
+            "url": "https://www.linkedin.com/company/eesc-jr-/",
+            "location": "São Carlos, São Paulo"
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Campanha do Agasalho USP",
+            "position": "Collector",
+            "startDate": "2010-07-31",
+            "endDate": "2012-07-31",
+            "summary": "Volunteer for street collection.",
+            "highlights": [],
+            "url": "https://www.linkedin.com/company/campanha-usp-do-agasalho-oficial/"
+        },
+        {
+            "organization": "Technovation Summer School For Girls",
+            "position": "Mentor",
+            "startDate": "2019-01-31",
+            "endDate": "2019-06-30",
+            "summary": "Volunteered as a mentor for students up to 18 years old to develop a mobile application focused on the social issue of their localities.",
+            "highlights": [],
+            "url": "https://www.linkedin.com/company/technovation-s%C3%A3o-carlos/"
+        }
+    ],
+    "education": [
+        {
+            "institution": "Escola de Engenharia de São Carlos (USP)",
+            "area": "Engineering",
+            "studyType": "Bachelor's Degree",
+            "startDate": "2010-12-31",
+            "endDate": "2019-12-31",
+            "courses": [
+                "Mechanical Production Engineering"
+            ]
+        }
+    ],
+    "awards": [],
+    "certificates": [
+        {
+            "name": "AWS Cloud Practitioner",
+            "issuer": "Amazon Web Services",
+            "date": "2024-12-27",
+            "url": "https://www.credly.com/badges/b6bcc786-cbc4-4105-a2c6-56841a0d7a2b/linked_in_profile"
+        },
+        {
+            "name": "React Developer",
+            "issuer": "XP Educação",
+            "date": "2022-08-01",
+            "url": "https://drive.google.com/file/d/1iIGlIeZeulQ-a2CV8f3f-D55bOb3WhJ2/view?usp=sharing"
+        },
+        {
+            "name": "Coursera Achievements",
+            "issuer": "Coursera",
+            "url": "https://www.coursera.org/user/bc9bba21e8d66c2ddd136715225d6dcc"
+        },
+        {
+            "name": "Google Cloud Badges",
+            "issuer": "Google",
+            "url": "https://www.cloudskillsboost.google/public_profiles/99226cef-d62c-474b-bac6-24ccd8adc0b4"
+        },
+        {
+            "name": "Credly Badges",
+            "issuer": "IBM, Cisco and WordQuant University",
+            "url": "https://www.credly.com/users/erion-criscente/badges"
+        }
+    ],
+    "publications": [],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "master",
+            "keywords": [
+                "React",
+                "Next.js",
+                "Redux",
+                "Node.js",
+                "Django",
+                "Docker"
+            ]
+        },
+        {
+            "name": "Cloud Computing",
+            "level": "master",
+            "keywords": [
+                "AWS",
+                "GCP",
+                "Azure",
+                "Digital Ocean",
+                "Oracle"
+            ]
+        },
+        {
+            "name": "Project Management",
+            "level": "master",
+            "keywords": [
+                "Agile",
+                "Scrum"
+            ]
+        },
+        {
+            "name": "Unix",
+            "level": "master",
+            "keywords": [
+                "General system commands",
+                "Computer networks",
+                "Data manipulation",
+                "System permissions",
+                "Text editors"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Portuguese",
+            "fluency": "Native"
+        },
+        {
+            "fluency": "Advanced",
+            "language": "English"
+        }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": [],
+    "meta": {
+        "theme": "elegant"
+    }
+}
